@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>부스지도</title>
+    <link rel="stylesheet" href="./varSt.css" type="text/css">
+</head>
+<body>
+    <script>
+        function getLoc(){
+            var x = event.offsetX;
+            var y = event.offsetY;
+            if (2 <= y && y < 123 && 26 <= x && x < 50){
+              location.href = "/T2#event1";
+        }else if (130 <= y && y < 252 && 26 <= x && x < 50){
+              location.href = "/T2#event2";
+        }else if (2 <= y && y < 123 && 65 <= x && x < 175){
+              location.href = "/T2#game";
+        }else if (2 <= y && y < 14 && 190 <= x && x < 258){
+              location.href = "/T2#photo";
+        }else if (2 <= y && y < 38 && 270 <= x && x < 355){
+              location.href = "/T2#honeybee1";
+        }else if (44 <= y && y < 80 && 270 <= x && x < 355){
+              location.href = "/T2#honeybee2";
+        }else if (106 <= y && y < 143 && 270 <= x && x < 355){
+              location.href = "/T2#honeybee3";
+        }else if (151 <= y && y < 163 && 270 <= x && x < 355){
+              location.href = "/T2#renewal";
+        }else if (265 <= y && y < 275 && 68 <= x && x < 355){
+              location.href = "/T2#stage";
+        }else if (172 <= y && y < 252 && 108 <= x && x < 311){
+              location.href = "/T2#rest";
+        }else {
+             alert("부스를 클릭해주세요!");
+        }
+        }
+        </script>
+    <h1><a id="map">부스지도</a></h1>
+    <div class="combobox">
+      <div>타임 선택 : 
+        <select onchange="location=this.value;">
+          <option value="/T1">1타임</option>
+          <option value="/T2" selected="selected">2타임</option>
+          <option value="/T3">3타임</option>
+      </select>
+      </div></div>
+    <hr /><br>
+
+    <h2 style="text-align: center">2타임 부스지도</h2><br>
+    <img src="/img" onClick="javascript:getLoc()"><br><br><br<br><br><br<br><br><br<br>
+
+
+    <h1>부스설명</h1>
+    <div class="combobox">바로가기 : 
+    <select onchange="location=this.value;">
+      <option value="/T2" selected="selected">선택</option>
+      <option value="/T2#honeybee">꿀벌부스</option>
+      <option value="/T2#event">이벤트부스</option>
+      <option value="/T2#renewal">리뉴얼부스</option>
+      <option value="/T2#game">게임존</option>
+      <option value="/T2#photo">포토존</option>
+      <option value="/T2#stage">무대</option>
+      <option value="/T2#rest">쉼터</option>
+  </select>
+  </div>
+  
+  <hr /><br>
+  <div class="explain">
+  <p><a id="honeybee"><h3>꿀벌부스 <a href="/T2" class="top">^top</a></h3>다른 벗들의 재능 기부를 꿀벌 부스에서 만나보세요!
+     <br>꿀벌부스로 인해 더 풍요로워지는 이화이언 배꽃정원!!
+     <br>와서 즐길 준비 되셨나요~</a></p><br>
+  <p><a id="honeybee1"><h4>꿀벌부스 1 <a href="/T2" class="top">^top</a></h4>꿀벌부스 1에서는 ~를 한다고 합니다.<br>
+    부스에 놀러오셔서 꿀벌 벗과 도란도란 얘기도 나누고<br>
+    즐거운 시간 보내다 가세요!</a></p><br>
+  <p><a id="honeybee2"><h4>꿀벌부스 2 <a href="/T2" class="top">^top</a></h4>꿀벌부스 2에서는 ~를 한다고 합니다.<br>
+     부스에 놀러오셔서 꿀벌 벗과 도란도란 얘기도 나누고<br>
+     즐거운 시간 보내다 가세요!</a></p><br>
+  <p><a id="honeybee3"><h4>꿀벌부스 3 <a href="/T2" class="top">^top</a></h4>꿀벌부스 3에서는 ~를 한다고 합니다.<br>
+     부스에 놀러오셔서 꿀벌 벗과 도란도란 얘기도 나누고<br>
+     즐거운 시간 보내다 가세요!</a></p><br><br>
+
+  <p><a id="event"><h3>이벤트부스 <a href="/T2" class="top">^top</a></h3>이화이언에서 준비한 다양한 이벤트!<br>
+    배꽃정원 이벤트부스에서 만나보세요~<br>
+    다양한 선물이 준비되어 있으니 모두 컴컴!</a></p><br>
+  <p><a id="event1"><h4>이벤트부스1 <a href="/T2" class="top">^top</a></h4>이벤트 부스 1에서는 이화이언이 준비한 첫 번째 이벤트!<br>
+    벗들에게 전하는 한마디 부스입니다.<br>
+    벗들에게 건네고 싶은 따뜻한 한 마디를 포스트잇에 적고 선물도 받고!</a></p><br>
+  <p><a id="event2"><h4>이벤트부스2 <a href="/T2" class="top">^top</a></h4>이벤트 부스 2에서는 이화이언이 준비한 첫 번째 이벤트!<br>
+    벗들에게 전하는 한마디 부스입니다.<br>
+    벗들에게 건네고 싶은 따뜻한 한 마디를 포스트잇에 적고 선물도 받고!</a></p><br><br>
+
+  <p><a id="renewal"><h3>리뷰얼부스 <a href="/T2" class="top">^top</a></h3>이화이언 웹사이트와 앱이 새롭게 단장했습니다!<br>
+    새로 바뀐 이화이언을 리뉴얼 부스에서 체험해보세요.<br>
+    이화인 인증이 안 된 이화인도 체험 가능하니 많은 참여 부탁드려요!</a></p><br><br>
+
+  <p><a id="game"><h3>게임존 <a href="/T2" class="top">^top</a></h3>이화 안의 더 큰 모임을 실현하기 위한 단체 게임!<br>
+    온라인에서만 소통할 수 있었던 벗들과 함께 게임을 즐기며 더 친해져보세요~<br>
+    게임에 열심히 임해주신다면 선물은 당연히 벗의 것!</a></p><br><br>
+
+  <p><a id="photo"><h3>포토존 <a href="/T2" class="top">^top</a></h3>배꽃정원에 왔으면~ 인증샷은 필수겠죠~<br>
+    이화이언이 벗들을 위해 신박한 포토존을 준비했으니 인생샷을 남겨보세요!<br>
+    베스트 포토를 선정해 선물도 드립니다~</a></p><br><br>
+
+  <p><a id="stage"><h3>무대 <a href="/T2" class="top">^top</a></h3>재학생 꿀벌 벗들이 다른 벗들을 위해 준비한 무대!<br>
+    무대의 벗과 소통하며 의미 있는 시간을 가져봐요~<br></a></p><br><br>
+
+  <p><a id="rest"><h3>쉼터 <a href="/T2" class="top">^top</a></h3>부스를 즐기다가 쉬기도 하고, 무대를 볼 수도 있는 쉼터!<br>
+        쉬기도 하고~ 무대도 보고~ 주변의 벗들과 소통할 수 있는 공간입니다.<br></a></p><br><br><br><br><br>
+  </div>
+</body>
+</html>
